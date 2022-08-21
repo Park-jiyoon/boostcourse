@@ -13,7 +13,7 @@ def king(kor, cho):
     for k in kor:
         for c in cho:
             if k == c:
-                new[k] = new.get(k, 0) + 1
+                new[k] = new.get(k, 0) + 1     #겹치면 저장
 
     for k in new.keys():
         print('조선과 고려에 모두 있는 왕 이름:', k)

@@ -57,6 +57,8 @@ def good_customer(information):
     for k, c in data.items():
         final.append((c[vip_count]))
 
+    for k,c in data.items(): #개행하려고 for문으로 출력함
+        print(k, c)
     print('할인 쿠폰을 받을 회원정보 아이디:'+final[0] + ',', '나이:'+
           final[1] + ',','전화번호:' + final[2] + ',', '성별:' + final[3] + ',', '지역:' + final[4] + ',','구매횟수:' + final[
               5])
